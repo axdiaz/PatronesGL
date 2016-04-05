@@ -4,7 +4,11 @@ public class COPizzaStore extends PizzaStore {
 
 	@Override
 	protected Pizza createPizza(String type) {
-		// TODO Auto-generated method stub
+		if (type.equals("Palmitos")) {
+			return new COStylePalmitos();
+		} else if (type.equals("Chacarera")){
+			return new COStyleChacarera();
+		}
 		return null;
 	}
 

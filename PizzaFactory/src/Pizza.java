@@ -1,14 +1,21 @@
-import org.omg.Messaging.SyncScopeHelper;
-
 public abstract class Pizza {
 
 	public String name;
 	public String sauce;
 	public String dough;
-	public Object prepare() {
+	
+	public String prepare() {
 		// TODO Auto-generated method stub
-		return "preparando "  + name ;
+		return "preparando "  + name + " con Salsa " + sauce + " con masa " + dough;
 		
 	}
 
+	public String cut() {
+		return "Estamos cortando la pizza";
+	}
+
+	public String box() {
+
+		return "Estamos empaquetando la pizza";
+	}
 }
